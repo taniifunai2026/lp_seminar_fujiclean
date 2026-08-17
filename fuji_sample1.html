@@ -3,11 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <title>【自治体様向け】持続可能な汚水処理と未来のインフラ経営セミナー | フジクリーン株式会社</title>
+    <title>下水道は維持できるのか？自治体経営の分岐点 | フジクリーン株式会社</title>
     <meta name="description" content="フジクリーンは日本の水環境問題を見据え、社会が求める浄化槽の普及に努めてきました。">
     <meta name="keywords" content="浄化槽,水処理,維持管理,ブロワ,廃水,合併浄化槽,単独,認定書,水環境">
-        <script src="https://seminar-app.com/js/conferenceer-embed.js"></script>
     <!-- 既存サイト用 CSS -->
+    <script src="https://seminar-app.com/js/conferenceer-embed.js"></script>
+    <script>
+    // 自動生成されたiframeを監視して制限を解除し、高さを自動調整する
+    var checkIframe = setInterval(function() {
+        var iframe = document.getElementById('conferenceer-embed');
+        if (iframe) {
+            clearInterval(checkIframe);
+            // sandbox制限に allow-same-origin を追加
+            iframe.setAttribute('sandbox', 'allow-forms allow-top-navigation allow-scripts allow-same-origin');
+            // 設定変更を反映するため iframe を再読み込み
+            iframe.src = iframe.src;
+        }
+    }, 200);
+
+    // iframeの高さ自動調整メッセージの受信
+    window.addEventListener('message', function(event) {
+        if (event.origin.indexOf('seminar-app.com') !== -1) {
+            var iframe = document.getElementById('conferenceer-embed') || document.querySelector('iframe[name="conferenceer-embed"]');
+            if (iframe && event.data) {
+                var h = typeof event.data === 'number' ? event.data : (event.data.height || event.data.scrollHeight);
+                if (h) {
+                    iframe.style.height = h + 'px';
+                }
+            }
+        }
+    });
+    </script>
     <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/html5reset.css">
     <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/base.css">
     <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/parts.css">
@@ -200,15 +226,14 @@
     <div class="crumb">
         <ul>
             <li><a href="https://www.fujiclean.co.jp/">HOME</a></li>
-            <li>持続可能な汚水処理セミナー</li>
+            <li>下水道は維持できるのか？自治体経営の分岐点</li>
         </ul>
     </div>
 
-
     <!-- メインコンテンツ（Shadow DOMでLPをカプセル化） -->
-    <div id="">
+    <div>
         <lp-content></lp-content>
-        <ins style="background-color: #fff;" class="conferenceer" data-cer-eventid="cer-0000000223" data-cer-origin="https://seminar-app.com"></ins>
+        <ins class="conferenceer" style="background-color: white;" data-cer-eventid="cer-0000000223" data-cer-origin="https://seminar-app.com"></ins>
     </div>
 
     <!-- 共通フッター -->
@@ -256,7 +281,6 @@
     </section>
 </div>
 
-
 <!-- Custom Elements / Shadow DOM -->
 <script>
     class LpContent extends HTMLElement {
@@ -271,7 +295,6 @@
                 <style>
                     :host {
                         display: block;
-                        /* 1rem = 10px(62.5%) に潰された計算を、ズーム補正で16px相当(100%)に引き上げる */
                         zoom: 1.6; 
                         -moz-transform: scale(1.6);
                         -moz-transform-origin: 0 0;
@@ -280,7 +303,6 @@
                         color: #1e293b;
                     }
 
-                    /* 外部CSSで全要素に強制されている font-size などをすべてクリア */
                     * {
                         font-size: unset;
                         line-height: unset;
@@ -290,8 +312,8 @@
                     .en-font { font-family: 'Plus Jakarta Sans', sans-serif; }
 
                     .fixed-bright-bg {
-                        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.88), rgba(240, 249, 255, 0.92)), 
-                                          url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2000&q=80');
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.70), rgba(240, 249, 255, 0.70)), 
+                                          url('https://images.unsplash.com/photo-1653204461265-b5b52c0579a0?auto=format&fit=crop&w=2000&q=80');
                         background-attachment: fixed;
                         background-position: center;
                         background-repeat: no-repeat;
@@ -299,8 +321,8 @@
                     }
 
                     .fixed-bright-bg-section2 {
-                        background-image: linear-gradient(to bottom, rgba(241, 245, 249, 0.90), rgba(224, 242, 254, 0.92)), 
-                                          url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=2000&q=80');
+                        background-image: linear-gradient(to bottom, rgba(241, 245, 249, 0.70), rgba(224, 242, 254, 0.70)), 
+                                          url('https://images.unsplash.com/photo-1562016600-ece13e8ba570?auto=format&fit=crop&w=2000&q=80');
                         background-attachment: fixed;
                         background-position: center;
                         background-repeat: no-repeat;
@@ -314,12 +336,6 @@
                         border: 1px solid rgba(226, 232, 240, 0.8);
                         box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.08);
                     }
-
-                    .glass-card-white {
-                        background: #ffffff;
-                        border: 1px solid #e2e8f0;
-                        box-shadow: 0 15px 30px -10px rgba(2, 132, 199, 0.1);
-                    }
                 </style>
 
                 <div class="antialiased">
@@ -327,37 +343,37 @@
                     <section class="fixed-bright-bg flex items-center justify-center pt-16 pb-20 px-4 sm:px-6 relative">
                         <div class="max-w-4xl mx-auto text-center z-10">
                             <div class="inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold mb-8 shadow-sm">
-                                <span>下水道課・環境保全課・企画政策課 担当者様対象</span>
+                                <span>自治体職員様・インフラ経営担当者様向け特別セミナー</span>
                             </div>
 
                             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-gray-900 mb-8">
-                                澄み渡る未来の街へ。<br>
+                                下水道は維持できるのか？<br>
                                 <span class="text-blue-600">
-                                    持続可能な汚水処理
+                                    自治体経営の分岐点
                                 </span>
-                                の新しい選択肢
                             </h1>
 
-                            <p class="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto font-medium leading-relaxed mb-12">
-                                施設老朽化・広域化の推進・人手不足の課題をスマートに解決。<br class="hidden sm:inline">
-                                全国自治体の最新導入データと、官民連携によるLCC削減の実践例を詳しく解説します。
+                            <p class="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto font-medium leading-relaxed mb-10">
+                                施設老朽化と人口減少が進む中、地域社会に必要な水環境をいかに持続可能にするか。<br class="hidden sm:inline">
+                                官民の枠組みを超えた最新事例と持続可能な汚水処理の選択肢を提示します。
                             </p>
 
-                            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-12">
-                                <div class="glass-card-bright p-6 rounded-2xl text-center">
-                                    <p class="text-xs text-blue-600 font-bold tracking-wider mb-1 en-font">DATE</p>
-                                    <p class="text-xl font-black text-gray-800">2026.11.12 <span class="text-xs font-normal text-gray-500">(木)</span></p>
-                                    <p class="text-xs text-gray-500 font-medium mt-1">14:00 - 15:30（Zoom）</p>
+                            <!-- セミナー概要カード -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-10 text-left">
+                                <div class="glass-card-bright p-5 rounded-xl">
+                                    <p class="text-xs text-blue-600 font-bold mb-1">開催日時</p>
+                                    <p class="text-lg font-bold text-gray-900">2026年10月8日(木) 13:00～15:00</p>
+                                    <p class="text-xs text-gray-500 mt-1">※ハイブリッド開催（現地 / オンライン）</p>
                                 </div>
-                                <div class="glass-card-bright p-6 rounded-2xl text-center">
-                                    <p class="text-xs text-blue-600 font-bold tracking-wider mb-1 en-font">FEE</p>
-                                    <p class="text-xl font-black text-blue-600">参加費 無料</p>
-                                    <p class="text-xs text-gray-500 font-medium mt-1">オンライン開催 / 申込み制</p>
+                                <div class="glass-card-bright p-5 rounded-xl">
+                                    <p class="text-xs text-blue-600 font-bold mb-1">主催・運営</p>
+                                    <p class="text-sm font-bold text-gray-900">主催：フジクリーン株式会社</p>
+                                    <p class="text-xs text-gray-600 mt-0.5">運営事務局：株式会社船井総合研究所</p>
                                 </div>
-                                <div class="glass-card-bright p-6 rounded-2xl text-center">
-                                    <p class="text-xs text-blue-600 font-bold tracking-wider mb-1 en-font">PRESENT</p>
-                                    <p class="text-xl font-black text-gray-800">起案用データ集</p>
-                                    <p class="text-xs text-gray-500 font-medium mt-1">庁内報告用サマリーPDF進呈</p>
+                                <div class="glass-card-bright p-5 rounded-xl md:col-span-2">
+                                    <p class="text-xs text-blue-600 font-bold mb-1">現地会場・アクセス</p>
+                                    <p class="text-sm font-bold text-gray-900">フジクリーン株式会社 本社</p>
+                                    <p class="text-xs text-gray-600 mt-1">〒460-0002 愛知県名古屋市中区丸の内一丁目16番15号 名古屋シミズ富国生命ビル14階</p>
                                 </div>
                             </div>
 
@@ -365,14 +381,11 @@
                                 <a href="#apply" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-base px-10 py-4 rounded-xl shadow-lg transition duration-300">
                                     セミナーに申し込む（無料）
                                 </a>
-                                <a href="#leaflet" class="w-full sm:w-auto bg-white hover:bg-gray-50 text-gray-700 font-bold text-sm px-8 py-4 rounded-xl border border-gray-200 shadow-sm transition duration-300">
-                                    庁内回覧用チラシ（PDF）
-                                </a>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Key Themes Section -->
+                    <!-- Key Themes Section（セミナーで学べる3つのアプローチ） -->
                     <section class="py-20 px-6 bg-white relative border-t border-gray-100">
                         <div class="max-w-5xl mx-auto">
                             <div class="text-center mb-16">
@@ -384,93 +397,135 @@
                             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                                 <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
                                     <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">01</div>
-                                    <h3 class="text-lg font-bold text-gray-900 mb-3">LCC最適化と施設再編</h3>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">広域化・持続可能なインフラ連携</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed">
-                                        集合処理と個別処理（浄化槽）のライフサイクルコストを客観的に比較し、最適な整備計画を設計するポイント。
+                                        近隣自治体との広域化構想における利害調整や、集合処理・個別処理を最適に組み合わせた事業継続モデルを解説します。
                                     </p>
                                 </div>
                                 <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
                                     <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">02</div>
-                                    <h3 class="text-lg font-bold text-gray-900 mb-3">広域化の円滑な協議</h3>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">官民連携（PPP/PFI）とLCC削減</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed">
-                                        近隣自治体との広域化構想における利害調整や、住民説明会・議会で理解を得るための具体的なデータ活用法。
+                                        財政負担を抑えつつ持続可能な経営を実現するため、民間ノウハウを活用した効率的な維持管理コスト縮減アプローチを提示します。
                                     </p>
                                 </div>
                                 <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
                                     <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">03</div>
-                                    <h3 class="text-lg font-bold text-gray-900 mb-3">管理DXと省力化</h3>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">維持管理DXと高度処理技術</h3>
                                     <p class="text-gray-600 text-sm leading-relaxed">
-                                        IoT遠隔監視と自動化技術を導入し、現場の巡回点検負担を大幅に削減。人手不足時代の新しい運用モデル。
+                                        IoT遠隔監視と高度処理技術を融合させ、人手不足時代の現場点検負担を大幅に省力化する最新の技術ソリューションを紹介します。
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Schedule Section -->
-                    <section class="fixed-bright-bg-section2 py-20 px-6 relative border-t border-gray-200">
+                    <!-- Program Section -->
+                    <section class="fixed-bright-bg-section2 py-16 px-6 relative border-t border-gray-200">
                         <div class="max-w-4xl mx-auto">
-                            <div class="text-center mb-16">
+                            <div class="text-center mb-12">
                                 <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Program</span>
-                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">当日のタイムスケジュール</h2>
-                                <p class="text-gray-500 text-xs sm:text-sm mt-2">※ 途中入退室可能 / 1画面で部署内複数名のご視聴も可能です</p>
+                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">タイムスケジュール＆プログラム</h2>
                             </div>
 
                             <div class="space-y-4">
-                                <div class="glass-card-bright p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
+                                <div class="glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
                                     <div class="md:w-36 flex-shrink-0">
-                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:00 - 14:10</span>
+                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:00 - 13:10</span>
                                     </div>
                                     <div>
-                                        <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">オープニング</span>
-                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">行政を取り巻く汚水処理事業の課題整理</h3>
-                                        <p class="text-gray-600 text-xs sm:text-sm">法改正や国の方針を踏まえ、自治体が今直面しているボトルネックを浮き彫りにします。</p>
+                                        <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">開会挨拶</span>
+                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">オープニングと本セミナーの目的</h3>
                                     </div>
                                 </div>
 
-                                <div class="glass-card-bright p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
+                                <div class="glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
                                     <div class="md:w-36 flex-shrink-0">
-                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:10 - 14:45</span>
+                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:10 - 14:10</span>
                                     </div>
-                                    <div>
-                                        <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">基調講演</span>
-                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">広域化・持続可能なインフラ経営の先進事例</h3>
-                                        <p class="text-gray-600 text-xs sm:text-sm">財政負担を抑えつつ高い水質保全を実現した先進自治体の取り組みと成功要因。</p>
+                                    <div class="flex-1">
+                                        <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">登壇企業による講演（3社）</span>
+                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-2">汚水処理インフラの現状と広域化・最適化の未来</h3>
+                                        <ul class="text-xs sm:text-sm text-gray-600 space-y-1.5">
+                                            <li>・<strong>テーマ①（自治体連携）:</strong> 広域化構想における利害調整と事業継続モデルの構築</li>
+                                            <li>・<strong>テーマ②（民間ソリューション）:</strong> 公民連携（PPP/PFI）による維持管理コスト縮減アプローチ</li>
+                                            <li>・<strong>テーマ③（技術革新）:</strong> 高度処理技術とDXを活用した省力化・遠隔監視の最前線</li>
+                                        </ul>
                                     </div>
                                 </div>
 
-                                <div class="glass-card-bright p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
+                                <div class="glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
                                     <div class="md:w-36 flex-shrink-0">
-                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:45 - 15:15</span>
+                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:10 - 14:40</span>
                                     </div>
                                     <div>
-                                        <span class="text-xs font-bold text-green-600 bg-green-100 px-2.5 py-1 rounded-md">事例・技術紹介</span>
-                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">フジクリーンの維持管理DX＆コスト縮減ソリューション</h3>
-                                        <p class="text-gray-600 text-xs sm:text-sm">遠隔監視と高度処理技術を組み合わせた最新の技術アプローチをご紹介します。</p>
+                                        <span class="text-xs font-bold text-green-600 bg-green-100 px-2.5 py-1 rounded-md">特別企画</span>
+                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">パネルディスカッション：下水道再編と自治体経営の突破口</h3>
+                                        <p class="text-gray-600 text-xs sm:text-sm">登壇3社が深掘りし、現実的な課題解決のシナリオと今後のロードマップについて議論します。</p>
                                     </div>
                                 </div>
 
-                                <div class="glass-card-bright p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
+                                <div class="glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6">
                                     <div class="md:w-36 flex-shrink-0">
-                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">15:15 - 15:30</span>
+                                        <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:40 - 15:00</span>
                                     </div>
                                     <div>
-                                        <span class="text-xs font-bold text-gray-600 bg-gray-200 px-2.5 py-1 rounded-md">質疑応答</span>
-                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">事前質問への回答・個別相談受付</h3>
-                                        <p class="text-gray-600 text-xs sm:text-sm">お申し込み時のご質問への回答や、個別相談のご案内を行います。</p>
+                                        <span class="text-xs font-bold text-gray-600 bg-gray-200 px-2.5 py-1 rounded-md">相談会</span>
+                                        <h3 class="text-base sm:text-lg text-gray-900 font-bold mt-1.5 mb-1">個別相談会 / 質疑応答</h3>
+                                        <p class="text-gray-600 text-xs sm:text-sm">各自治体様の個別の課題やご質問に対し、専任の担当者が具体的にお答えします。</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
 
-                    <!-- Form Section -->
-                    <section id="apply" class="py-20 px-6 bg-gray-50 relative">
-                        <div class="max-w-2xl mx-auto">
-                            <div class="text-center mb-10">
-                                <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Registration</span>
-                                <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2">セミナー参加申し込みフォーム（無料）</h2>
-                                <p class="text-gray-500 text-xs sm:text-sm mt-2">必要事項をご入力のうえ送信してください。Zoom参加用URLをお届けします。</p>
+                    <!-- Speakers Section -->
+                    <section class="py-16 px-6 bg-white border-t border-gray-100">
+                        <div class="max-w-4xl mx-auto">
+                            <div class="text-center mb-12">
+                                <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Speakers</span>
+                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">登壇者紹介</h2>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                                    <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">登壇者A</div>
+                                    <h3 class="font-bold text-gray-900 text-base">〇〇 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">フジクリーン株式会社</p>
+                                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">水処理技術・広域化ソリューションの開発および自治体提案を多数推進。</p>
+                                </div>
+
+                                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                                    <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">登壇者B</div>
+                                    <h3 class="font-bold text-gray-900 text-base">△△ 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">パートナー企業 / 自治体様</p>
+                                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">インフラ再編・事業コスト削減の具体事例や官民連携スキームの構築に精通。</p>
+                                </div>
+
+                                <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center">
+                                    <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-xl">登壇者C</div>
+                                    <h3 class="font-bold text-gray-900 text-base">◇◇ 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">株式会社船井総合研究所</p>
+                                    <p class="text-xs text-gray-500 mt-2 leading-relaxed">地方自治体向け公営企業経営・インフラDX戦略コンサルティングに従事。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Form Notice Section -->
+                    <section id="apply" class="pt-16 pb-6 px-6 bg-gray-50 border-t border-gray-200">
+                        <div class="max-w-2xl mx-auto text-center">
+                            <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Registration</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2">お申し込みフォーム</h2>
+                            <p class="text-gray-600 text-xs sm:text-sm mt-2">以下のフォームに必要事項をご記入の上、ご登録ください。</p>
+                            
+                            <!-- 特記事項・個人情報保護方針 -->
+                            <div class="bg-white p-5 rounded-xl border border-gray-300 text-left text-xs text-gray-600 space-y-2 mt-6 shadow-sm">
+                                <p class="font-bold text-gray-800 text-sm mb-2 text-center">- 個人情報保護方針について -</p>
+                                <p>主催者個人情報保護方針：<a href="https://www.fujiclean.co.jp/privacy_policy.html" target="_blank" class="text-blue-600 underline hover:text-blue-800">https://www.fujiclean.co.jp/privacy_policy.html</a></p>
+                                <p>運営事務局：株式会社船井総合研究所</p>
+                                <p>船井総合研究所・個人情報保護方針：<a href="https://www.funaisoken.co.jp/info/pp" target="_blank" class="text-blue-600 underline hover:text-blue-800">https://www.funaisoken.co.jp/info/pp</a></p>
+                                <p class="pt-1 border-t border-gray-200 text-gray-500">※事務局においては、委託を受けた業務の運営に必要な範囲で、主催者の個人情報保護方針に準拠して個人情報を取り扱います。</p>
                             </div>
                         </div>
                     </section>
