@@ -10,16 +10,16 @@
     <script src="https://seminar-app.com/js/conferenceer-embed.js"></script>
     <script>
     // 自動生成されたiframeを監視して制限を解除し、高さを自動調整する
-    var checkIframe = setInterval(function() {
-        var iframe = document.getElementById('conferenceer-embed');
-        if (iframe) {
-            clearInterval(checkIframe);
-            // sandbox制限に allow-same-origin を追加
-            iframe.setAttribute('sandbox', 'allow-forms allow-top-navigation allow-scripts allow-same-origin');
-            // 設定変更を反映するため iframe を再読み込み
-            iframe.src = iframe.src;
-        }
-    }, 200);
+    // var checkIframe = setInterval(function() {
+    //     var iframe = document.getElementById('conferenceer-embed');
+    //     if (iframe) {
+    //         clearInterval(checkIframe);
+    //         // sandbox制限に allow-same-origin を追加
+    //         iframe.setAttribute('sandbox', 'allow-forms allow-top-navigation allow-scripts allow-same-origin');
+    //         // 設定変更を反映するため iframe を再読み込み
+    //         iframe.src = iframe.src;
+    //     }
+    // }, 200);
 
     // iframeの高さ自動調整メッセージの受信
     window.addEventListener('message', function(event) {
@@ -233,7 +233,17 @@
     <!-- メインコンテンツ（Shadow DOMでLPをカプセル化） -->
     <div>
         <lp-content></lp-content>
-        <ins class="conferenceer" style="background-color: white;" data-cer-eventid="cer-0000000223" data-cer-origin="https://seminar-app.com"></ins>
+
+    <iframe scrolling="no" frameborder="no" 
+            sandbox="allow-forms allow-top-navigation allow-scripts allow-same-origin" 
+            allowtransparency="true" 
+            name="conferenceer-embed" 
+            id="conferenceer-embed" 
+            src="https://seminar-app.com/embed/cer-0000000223" 
+            style="width: 100%; height: 1200px;">
+    </iframe>
+
+        <!-- <ins class="conferenceer" style="background-color: white;" data-cer-eventid="cer-0000000223" data-cer-origin="https://seminar-app.com"></ins> -->
     </div>
 
     <!-- 共通フッター -->
@@ -528,7 +538,6 @@
                                 <p class="font-bold text-gray-800 text-sm mb-2 text-center">- 個人情報保護方針について -</p>
                                 <p>主催者個人情報保護方針：<a href="https://www.fujiclean.co.jp/privacy_policy.html" target="_blank" class="text-blue-600 underline hover:text-blue-800">https://www.fujiclean.co.jp/privacy_policy.html</a></p>
                                 <p>運営事務局：株式会社船井総合研究所</p>
-                                <p>船井総合研究所・個人情報保護方針：<a href="https://www.funaisoken.co.jp/info/pp" target="_blank" class="text-blue-600 underline hover:text-blue-800">https://www.funaisoken.co.jp/info/pp</a></p>
                                 <p class="pt-1 border-t border-gray-200 text-gray-500">※事務局においては、委託を受けた業務の運営に必要な範囲で、主催者の個人情報保護方針に準拠して個人情報を取り扱います。</p>
                             </div>
                         </div>
