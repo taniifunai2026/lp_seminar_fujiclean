@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>持続可能な汚水処理を考える～人口減少時代、自治体経営に求められるインフラ選択とは～ | フジクリーン株式会社</title>
+    <meta name="description" content="全国の自治体職員・経営企画・財政部門向けセミナー。学術・経営視点・自治体現場（牧之原市）の3つの視点から、人口減少時代における持続可能な汚水処理インフラの選択肢と「個別分散化」の可能性について考える機会を創出します。">
+    <meta name="keywords" content="汚水処理,自治体経営,広域化,個別分散化,浄化槽,農業集落排水,下水道,インフラ選択,牧之原市,フジクリーン">
+    <!-- 既存サイト用 CSS -->
+    <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/html5reset.css">
+    <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/base.css">
+    <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/parts.css">
+    <link rel="stylesheet" href="https://www.fujiclean.co.jp/company/css/company.css">
+    <link rel="stylesheet" href="https://www.fujiclean.co.jp/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="icon" href="https://www.fujiclean.co.jp/favicon.ico">
+    
+    <!-- 既存サイト用 JS -->
+    <script type="text/javascript" src="https://webfonts.xserver.jp/js/xserver.js"></script>
+    <script type="text/javascript" src="https://www.fujiclean.co.jp/common/js/jquery-1.11.0.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://www.fujiclean.co.jp/common/js/html5shiv-printshiv.min.js"></script>
+        <script src="https://www.fujiclean.co.jp/common/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="https://www.fujiclean.co.jp/common/js/import.js"></script>
+    <script src="https://www.fujiclean.co.jp/common/js/common.js"></script>
+    <script src="https://www.fujiclean.co.jp/water/js/yuga.js"></script>
+    <script src="https://www.fujiclean.co.jp/js/g_analytics.js"></script>
+
+    <!-- GSAP & ScrollTrigger ライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+    <!-- 共通ヘッダー -->
+    <header id="top-head">
+        <div class="inner">
+            <div class="left_head">
+                <div id="mobile-head">
+                    <h1 class="logo"><a href="https://www.fujiclean.co.jp/"><img src="https://www.fujiclean.co.jp/common/img/header/logo.png" alt="フジクリーン株式会社"></a></h1>
+                    <div id="nav-toggle">
+                        <div> <span></span> <span></span> <span></span> </div>
+                    </div>
+                    <div class="flex">
+                    <div id="search-box">
+                    <form action="https://www.google.com/cse" id="cse-search-box">
+                            <div>
+                            <input type="hidden" name="cx" value="001762142127275510118:2itrbeuicmw" />
+                            <input type="hidden" name="ie" value="UTF-8" />
+                            <span></span>
+                            <input class="txtarea" placeholder="サイト内検索" type="text" name="q" />
+                            <span class="search_box"><input type="image" src="https://www.fujiclean.co.jp/common/img/icon/search_icon.png" class="search_btn" /></span>
+                        </div>
+                        </form>
+                    </div>
+                    <script type="text/javascript" src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script> 
+                    <div class="global"><a href="https://fujicleanglobal.com/" target="_blank"><img src="https://www.fujiclean.co.jp/common/img/header/head_icon01.png" alt="Global"></a></div>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li class="menu__mega">
+                        <a href="https://www.fujiclean.co.jp/about/" class="init-bottom">フジクリーンについて</a>
+                        <ul class="menu__second-level">
+                            <h2 class="h201"><a href="https://www.fujiclean.co.jp/about/">フジクリーンについて</a></h2>
+                            <li><a href="https://www.fujiclean.co.jp/about/reasons/">選ばれる理由</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/development/">研究開発・技術開発</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/manufacture/">製造</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/maintenance/">維持管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__mega">
+                        <a href="https://www.fujiclean.co.jp/product/jokaso/" class="init-bottom">商品紹介</a>
+                        <ul class="menu__second-level">
+                            <h2 class="h202"><a href="https://www.fujiclean.co.jp/product/jokaso/">商品紹介</a></h2>
+                            <li><a href="https://www.fujiclean.co.jp/product/jokaso/">浄化槽</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/shugou/">集合処理（下水道）</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/industrial/">産業廃水処理ユニット</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/blower/">ブロワ</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/other/">浄化槽関連商品</a></li>
+                            <li class="blank_link"><a href="https://www.fujiclean.co.jp/material/index.html" target="_blank">資料ダウンロード</a></li>
+                            <li class="blank_link"><a href="https://www.fujiclean.co.jp/simulation/index.html" target="_blank">処理対象人員算定シミュレーター</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/qa/">よくあるお問い合わせ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__mega">
+                        <a href="https://www.fujiclean.co.jp/action/">私たちの取り組み</a>
+                        <ul class="menu__second-level">
+                            <h2 class="h203"><a href="https://www.fujiclean.co.jp/action/">私たちの取り組み</a></h2>
+                            <li><a href="https://www.fujiclean.co.jp/action/topics/">浄化槽Topics</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/water/">水の話</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/newspaper/">水泥新聞</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/fujiclean/our_water/">ぼくたちの大切な水</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__mega">
+                        <a href="https://www.fujiclean.co.jp/sustainability/">サステナビリティ</a>
+                        <ul class="menu__second-level">
+                            <h2 class="h203"><a href="https://www.fujiclean.co.jp/sustainability/">サステナビリティ</a></h2>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/sdgs/">SDGsへの取り組み&nbsp;</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/human_rights_initiatives/">人権への取り組み&nbsp;</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/#pageLink01">方針・ガイドライン・声明&nbsp;</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/#pageLink02">公益通報窓口&nbsp;</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__mega">
+                        <a href="https://www.fujiclean.co.jp/company/">企業情報</a>
+                        <ul class="menu__second-level">
+                            <h2 class="h204"><a href="https://www.fujiclean.co.jp/company/">企業情報</a></h2>
+                            <div class="menu_break_div">
+                                <li><a href="https://www.fujiclean.co.jp/company/philosophy/">会社理念</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/HR_policy.html">人事ポリシー</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/companyprofile/">会社概要</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/history/">沿革</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/office/">事業所一覧</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/overseas/">海外展開</a></li>
+                            </div>
+                            <div class="menu_break_div">
+                                <li><a href="https://www.fujiclean.co.jp/company/iso/">ISO認証</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/awards/">受賞歴</a></li>
+                                <li><a href="https://www.fujiclean.co.jp/company/compliance/">公益通報窓口</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="menu__mega"><a href="https://www.fujiclean.co.jp/recruit/" target="_blank">採用情報</a></li>
+                    <li class="menu__mega"><a href="https://www.fujiclean.co.jp/news/">新着情報</a></li>
+                </ul>
+            </div>
+            <nav id="global-nav">
+                <ul class="sp_global-nav">
+                    <li class="submenu_link">
+                        <a href="javascript:void(0);">フジクリーンについて</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.fujiclean.co.jp/about/">フジクリーンについて</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/reasons/">選ばれる理由</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/development/">研究開発・技術開発</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/manufacture/">製造</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/about/maintenance/">維持管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu_link">
+                        <a href="javascript:void(0);">商品紹介</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.fujiclean.co.jp/product/jokaso/">商品紹介</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/jokaso/">浄化槽</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/shugou/">集合処理（下水道）</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/industrial/">産業廃水処理ユニット</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/blower/">ブロワ</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/product/other/">浄化槽関連商品</a></li>
+                            <li class="blank_link"><a href="https://www.fujiclean.co.jp/material/index.html" target="_blank">資料ダウンロード</a></li>
+                            <li class="blank_link"><a href="https://www.fujiclean.co.jp/simulation/index.html" target="_blank">処理対象人員算定シミュレーター</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/qa/">よくあるお問い合わせ</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu_link">
+                        <a href="javascript:void(0);">私たちの取り組み</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.fujiclean.co.jp/action/">私たちの取り組み</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/action/topics/">浄化槽Topics</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/water/">水の話</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/newspaper/">水泥新聞</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/fujiclean/our_water/">ぼくたちの大切な水</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu_link">
+                        <a href="javascript:void(0);">サステナビリティ</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/">サステナビリティ</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/sdgs/">SDGsへの取り組み</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/human_rights_initiatives/">人権への取り組み</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/#pageLink01">方針・ガイドライン・声明&nbsp;</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/sustainability/#pageLink02">公益通報窓口&nbsp;</a></li>
+                        </ul>
+                    </li>
+                    <li class="submenu_link">
+                        <a href="javascript:void(0);">企業情報</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.fujiclean.co.jp/company/">企業情報</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/philosophy/">会社理念</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/HR_policy.html">人事ポリシー</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/companyprofile/">会社概要</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/history/">沿革</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/office/">事業所一覧</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/overseas/">海外展開</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/iso/">ISO認証</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/awards/">受賞歴</a></li>
+                            <li><a href="https://www.fujiclean.co.jp/company/compliance/">公益通報窓口</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.fujiclean.co.jp/recruit/" target="_blank">採用情報</a></li>
+                    <li><a href="https://www.fujiclean.co.jp/news/">新着情報</a></li>
+                    <li><a href="https://www.fujiclean.co.jp/fujiclean/english/">グローバル</a></li>
+                </ul>
+                <ul class="nav02">
+                    <li><a href="https://www.fujiclean.co.jp/qa/"><span><img src="https://www.fujiclean.co.jp/common/img/header/head_icon02.png" alt=""></span>お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="crumb">
+        <ul>
+            <li><a href="https://www.fujiclean.co.jp/">HOME</a></li>
+            <li>持続可能な汚水処理を考える</li>
+        </ul>
+    </div>
+
+    <!-- メインコンテンツ（Shadow DOMでLPをカプセル化） -->
+    <div>
+        <lp-content></lp-content>
+    </div>
+
+    <!-- 共通フッター -->
+    <footer>
+        <div class="footer_top">
+            <div>
+                <p>お電話でのお問い合わせは、<br class="spStyle">最寄の営業所におかけください。</p>
+                <ul class="footer_link">
+                    <li><a href="https://www.fujiclean.co.jp/qa/"><span>お問い合わせ</span></a></li>
+                    <li><a href="https://www.fujiclean.co.jp/company/office/"><span>事業所一覧</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_txt">
+            <div class="flex">
+                <p><script>copyright();</script></p>
+                <div>
+                    <ul>
+                        <li><a href="https://www.fujiclean.co.jp/sitemap/">サイトマップ</a></li>
+                        <li><a href="https://www.fujiclean.co.jp/privacy_policy.html">個人情報保護方針</a></li>
+                        <li><a href="https://www.fujiclean.co.jp/gift_and_Entertainment.html">贈答接待に関する基本方針</a></li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </footer>
+
+    <section class="stickynav hiden">
+        <div class="stickynavBox">
+            <ul class="stickynav_inner details_btn03 pcStyle">
+                <li> <a href="https://www.fujiclean.co.jp/material/index.html" target="_blank">
+                    <div><span></span>資料ダウンロード</div>
+                    </a>
+                </li>
+                <li> <a href="https://www.fujiclean.co.jp/simulation/index.html" target="_blank">
+                    <div><span></span>処理対象人員算定シミュレーター</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <ul class="stickynav_inner spStyle">
+            <li><a href="https://www.fujiclean.co.jp/material/index.html" target="_blank"><span><img src="https://www.fujiclean.co.jp/company/img/sp_sticky01.png" alt=""></span>資料ダウンロード</a></li>
+            <li><a href="https://www.fujiclean.co.jp/simulation/index.html" target="_blank"><span><img src="https://www.fujiclean.co.jp/company/img/sp_sticky02.png" alt=""></span>処理対象人員算定<br>シミュレーター</a></li>
+        </ul>
+    </section>
+</div>
+
+<!-- Custom Elements / Shadow DOM -->
+<script>
+    class LpContent extends HTMLElement {
+        constructor() {
+            super();
+            const shadow = this.attachShadow({ mode: 'open' });
+
+            shadow.innerHTML = `
+                <!-- Tailwind CSS CDN -->
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap">
+                <style>
+                    :host {
+                        display: block;
+                        zoom: 1.6; 
+                        -moz-transform: scale(1.6);
+                        -moz-transform-origin: 0 0;
+                        font-family: 'Zen Kaku Gothic New', sans-serif;
+                        background-color: #f8fafc;
+                        color: #1e293b;
+                    }
+
+                    * {
+                        font-size: unset;
+                        line-height: unset;
+                        box-sizing: border-box;
+                    }
+
+                    .en-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+                    .fixed-bright-bg {
+                        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(240, 249, 255, 0.85)), 
+                                          url('https://images.unsplash.com/photo-1533077162801-86490c593afb?auto=format&fit=crop&w=2000&q=80');
+                        background-attachment: fixed;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .fixed-bright-bg-section2 {
+                        background-image: linear-gradient(to bottom, rgba(241, 245, 249, 0.70), rgba(224, 242, 254, 0.70)), 
+                                          url('https://images.unsplash.com/photo-1562016600-ece13e8ba570?auto=format&fit=crop&w=2000&q=80');
+                        background-attachment: fixed;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .glass-card-bright {
+                        background: rgba(255, 255, 255, 0.85);
+                        backdrop-filter: blur(16px);
+                        -webkit-backdrop-filter: blur(16px);
+                        border: 1px solid rgba(226, 232, 240, 0.8);
+                        box-shadow: 0 10px 25px -5px rgba(14, 165, 233, 0.08);
+                        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+
+                    .glass-card-bright:hover {
+                        transform: translateY(-4px);
+                        box-shadow: 0 20px 30px -10px rgba(14, 165, 233, 0.15);
+                    }
+
+                    /* アニメーション用の初期非表示スタイル */
+                    .gsap-fade-up {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+
+                    /* ボタンの洗練されたホバーモーション */
+                    .btn-motion {
+                        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
+                    .btn-motion:hover {
+                        transform: translateY(-2px) scale(1.02);
+                        box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+                    }
+                </style>
+
+                <div class="antialiased">
+                    <!-- Hero Section -->
+                    <section class="fixed-bright-bg flex items-center justify-center pt-16 pb-20 px-4 sm:px-6 relative">
+                        <div class="max-w-4xl mx-auto text-center z-10">
+                            <div class="gsap-hero inline-flex items-center space-x-2 bg-blue-50 border border-blue-200 text-blue-800 px-5 py-2 rounded-full text-xs sm:text-sm font-bold mb-8 shadow-sm">
+                                <span>自治体様向け特別セミナー</span>
+                            </div>
+
+                            <h1 class="gsap-hero text-2xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight text-gray-900 mb-8">
+                                持続可能な汚水処理を考える<br>
+                                <span class="text-blue-600 text-base sm:text-xl lg:text-3xl">
+                                    ～人口減少時代、自治体経営に求められるインフラ選択とは～
+                                </span>
+                            </h1>
+
+                            <p class="gsap-hero text-gray-600 text-sm sm:text-base max-w-2xl mx-auto font-medium leading-relaxed mb-10 text-center">
+                                <span class="inline-block">人口減少や老朽化で</span><span class="inline-block">下水道・集落排水の維持が困難になる中、</span><span class="inline-block">本セミナーでは、</span>
+                                <span class="inline-block">学術・財務・現場の視点から</span><span class="inline-block">個別分散型を含めた将来像を</span><span class="inline-block">再考する機会を提供します。</span>
+                                <span class="inline-block">これからの自治体経営に必要な</span><span class="inline-block">「インフラ再構成の判断材料」をお届けします。</span>
+                            </p>
+
+                            <!-- セミナー概要カード -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-10 text-left">
+                                <div class="gsap-hero glass-card-bright p-5 rounded-xl border-l-4 border-blue-600">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <p class="text-sm text-blue-600 font-bold">開催日時</p>
+                                        <span class="bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded border border-red-200">
+                                            締切: 10/2(金) 23:59
+                                        </span>
+                                    </div>
+                                    <p class="text-2xl font-bold text-gray-900 leading-snug">
+                                        <span class="text-4xl sm:text-2xl font-black text-gray-900 block mb-1">2026年10月8日(木)</span>
+                                        13:00～15:00<span class="text-sm ml-2">(受付開始：12:45～)</span>
+                                    </p>
+                                    <p class="text-sm mt-2">
+                                        <span class="font-bold text-xl">ハイブリット開催</span><br>
+                                        <span class="text-xs">※原則オンライン参加となります。<br>※会場参加は抽選とさせていただきます。</span>
+                                    </p>
+                                </div>
+                                <div class="gsap-hero glass-card-bright p-5 rounded-xl">
+                                    <p class="text-sm text-blue-600 font-bold mb-3">主催・開催地・運営</p>
+                                    <p class="text-sm font-bold text-gray-900 mb-2">【主催】<br>フジクリーン株式会社</p>
+                                    <p class="text-sm font-bold text-gray-900 mb-3">【開催地】<br>
+                                        フジクリーン株式会社 本社（名古屋市）
+                                        <a href="https://maps.app.goo.gl/RfKSiwmQW6JgSR3L6" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-sky-700 hover:text-sky-900 underline ml-2">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                            </svg>
+                                        </a>
+                                    </p>
+                                    <p class="text-xs text-gray-600">運営事務局：株式会社船井総合研究所</p>
+                                </div>
+
+                            </div>
+
+                            <div class="gsap-hero flex flex-col sm:flex-row items-center justify-center gap-4">
+                                <a href="https://seminar-app.com/cer-0000000223" target="_blank" rel="noopener noreferrer" class="btn-motion w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-base px-10 py-4 rounded-xl shadow-lg inline-block">
+                                    セミナーに申し込む（外部サイトへ）
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Key Themes Section（セミナーで学べる3つのアプローチ） -->
+                    <section class="py-20 px-6 bg-white relative border-t border-gray-100">
+                        <div class="max-w-5xl mx-auto">
+                            <div class="text-center mb-16 gsap-fade-up">
+                                <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Key Topics</span>
+                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">セミナーで学べる3つのアプローチ</h2>
+                                <div class="w-12 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- 01：基調講演（浦上教授） -->
+                                <div class="gsap-fade-up bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm text-left transition-transform duration-300 hover:-translate-y-1">
+                                    <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">01</div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">全国動向と将来の視点</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        人口減少や老朽化、人材不足の現状を整理。集合処理と個別処理のそれぞれの特徴から、今求めるべき視点を提示します。
+                                    </p>
+                                </div>
+
+                                <!-- 02：経営視点（トーマツ後藤氏） -->
+                                <div class="gsap-fade-up bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm text-left transition-transform duration-300 hover:-translate-y-1">
+                                    <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">02</div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">自治体経営と財政リスク</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        不採算施設の更新・維持コスト増大による財政リスクを検証。担当者が持つべき投資判断の基準を解説します。
+                                    </p>
+                                </div>
+
+                                <!-- 03：現場講演（牧之原市田形氏） -->
+                                <div class="gsap-fade-up bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm text-left transition-transform duration-300 hover:-translate-y-1">
+                                    <div class="w-12 h-12 bg-blue-500 text-white font-extrabold rounded-xl flex items-center justify-center text-lg mb-6 shadow-md">03</div>
+                                    <h3 class="text-lg font-bold text-gray-900 mb-3">現場における意思決定プロセス</h3>
+                                    <p class="text-gray-600 text-sm leading-relaxed">
+                                        牧之原市での実際の方針見直しの経緯や庁内調整を共有。他自治体が参考にできる具体的な示唆をお伝えします。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Program Section -->
+                    <section class="fixed-bright-bg-section2 py-16 px-6 relative border-t border-gray-200">
+                        <div class="max-w-4xl mx-auto">
+                            <div class="text-center mb-12 gsap-fade-up">
+                                <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Program</span>
+                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">タイムスケジュール＆プログラム</h2>
+                            </div>
+
+                            <div class="space-y-4">
+            <!-- 13:00 - 13:05 開会 -->
+            <div class="gsap-fade-up glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-sm font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">開会</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:00 - 13:05</span>
+                </div>
+                <div>
+                    
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">オープニング</h3>
+                </div>
+            </div>
+
+            <!-- 13:05 - 13:25 基調講演 -->
+            <div class="gsap-fade-up glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-sm font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">基調講演</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:05 - 13:25</span>
+                </div>
+                <div class="flex-1">
+                    
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">下水道課題と将来展望</h3>
+                    <p class="text-sm sm:text-base font-bold text-gray-700 mb-1.5">近畿大学　教授　浦上 拓也 氏</p>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        人口減少・老朽化・人材不足の課題や、集合処理と個別処理の特徴から今求められる視点を解説。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 13:25 - 13:40 経営視点講演 -->
+            <div class="gsap-fade-up glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-sm font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">経営視点講演</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:25 - 13:40</span>
+                </div>
+                <div class="flex-1">
+
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">自治体経営・財政課題</h3>
+                    <p class="text-sm sm:text-base font-bold text-gray-700 mb-1.5">有限責任監査法人トーマツ　マネジャー　後藤 祥平 氏</p>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        公営企業経営の観点から財政リスクや投資判断、担当者が持つべき評価軸を提示。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 13:40 - 14:00 現場講演 -->
+            <div class="gsap-fade-up glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-sm font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded-md">現場講演</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">13:40 - 14:00</span>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">個別分散化実施への意思決定プロセス</h3>
+                    <p class="text-sm sm:text-base font-bold text-gray-700 mb-1.5">静岡県牧之原市　農林水産課　基盤整備係　主幹　田形 正典 氏</p>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                        課題認識、見直しの経緯、庁内調整、意思決定プロセスと他自治体への具体的な示唆を共有。
+                    </p>
+                </div>
+            </div>
+
+            <!-- 14:00 - 14:05 休憩 -->
+            <div class="gsap-fade-up glass-card-bright p-4 rounded-2xl flex items-center justify-center bg-gray-50/80 border border-gray-200">
+                <span class="text-sm font-bold text-gray-500 en-font">14:00 - 14:05 休憩</span>
+            </div>
+
+            <!-- 14:05 - 14:55 パネルディスカッション -->
+            <div class="gsap-fade-up glass-card-bright p-6 pr-3 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-xs font-bold text-green-700 bg-green-100 px-1.5 py-1 rounded-md">パネルディスカッション</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:05 - 14:55</span>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">
+                        人口減少時代の汚水処理インフラ～自治体は何を基準に選択すべきか～<br>
+                        
+                    </h3>
+                    <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                         莫大な維持費、人口減少、制度の壁……。日本の下水道は今、大きな岐路に立たされています。<br>
+                         <span class="inline-block">従来の「集合処理」が限界を迎える中、解決の糸口となる「個別分散化」とは？</span>
+                         <span class="inline-block"> 課題の本質を鋭く分析し、全国の自治体が「今、本当にするべきこと」を徹底議論します。</span>
+                        
+                     </p>
+                </div>
+            </div>
+
+            <!-- 14:55 - 15:00 閉会 -->
+            <div class="gsap-fade-up glass-card-bright p-6 rounded-2xl flex flex-col md:flex-row md:items-center gap-6 text-left">
+                <div class="md:w-36 flex-shrink-0">
+                    <span class="inline-block mb-1.5 text-sm font-bold text-gray-600 bg-gray-200 px-2.5 py-1 rounded-md">閉会</span><br>
+                    <span class="bg-blue-500 text-white font-bold px-4 py-1.5 rounded-full text-sm shadow-sm en-font">14:55 - 15:00</span>
+                </div>
+                <div>
+                    <h3 class="text-lg sm:text-xl text-gray-900 font-bold mt-1.5 mb-1">総括・閉会挨拶</h3>
+                </div>
+            </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Speakers Section -->
+                    <section class="py-16 px-6 bg-white border-t border-gray-100">
+                        <div class="max-w-4xl mx-auto">
+                            <div class="text-center mb-12 gsap-fade-up">
+                                <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Speakers</span>
+                                <h2 class="text-2xl sm:text-4xl font-extrabold text-gray-900 mt-2">登壇者紹介</h2>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="gsap-fade-up bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center transition-transform duration-300 hover:-translate-y-1">
+                                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full font-bold text-xs mb-3">speaker</span>
+                                    <div class="w-40 mx-auto mb-3 overflow-hidden border-2 border-white shadow-md rounded-lg">
+                                        <img src="https://www.kindai.ac.jp/data/images/professor/69.jpg" alt="浦上 拓也 氏" class="w-full h-full object-cover">
+                                    </div>
+                                    <h3 class="font-bold text-gray-900 text-base">浦上 拓也 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">近畿大学 経営学部 教授 / 博士（経営学）</p>
+                                    <p class="text-xs text-gray-600 mt-3 leading-relaxed text-left">
+                                        専門は公益事業論（主に水道マネジメント）。神戸大学大学院修了後、英国等の客員研究員を経て現職。上下水道事業の産業組織論・公営企業経営を長年研究し、総務省や国土交通省の各種検討会委員、近畿大学実学社会起業イノベーション学位プログラム長などを歴任。政策・経営の両面から広域化や官民連携（PPP）を見据えた持続可能なインフラ経営のあり方を発信している。
+                                    </p>
+                                </div>
+
+                                <div class="gsap-fade-up bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center transition-transform duration-300 hover:-translate-y-1">
+                                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full font-bold text-xs mb-3">speaker</span>
+                                    <div class="w-40 mx-auto mb-3 overflow-hidden border-2 border-white shadow-md rounded-lg">
+                                        <img src="./img/goto.jpg" alt="後藤 祥平 氏" class="w-full h-full object-cover">
+                                    </div>
+                                    <h3 class="font-bold text-gray-900 text-base">後藤 祥平 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">有限責任監査法人トーマツ マネジャー</p>
+                                    <p class="text-xs text-gray-600 mt-3 leading-relaxed text-left">
+                                        公認会計士、ITストラテジスト。平成28年に入所後、水道・下水道や病院など公営企業を対象とした法適用支援、経営戦略策定、料金改定、PPP/PFIをはじめとする官民連携や広域化のアドバイザリー業務に数多く従事。地方公共団体の経営・財務マネジメント強化事業アドバイザーを務めるほか、公営企業経営やPDCAサイクル定着に関する論文・研究報告も執筆している。
+                                    </p>
+                                </div>
+
+                                <div class="gsap-fade-up bg-gray-50 p-6 rounded-2xl border border-gray-200 text-center transition-transform duration-300 hover:-translate-y-1">
+                                    <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 rounded-full font-bold text-xs mb-3">speaker</span>
+                                    <div class="w-40 mx-auto mb-3 overflow-hidden border-2 border-white shadow-md rounded-lg">
+                                        <img src="./img/tagata.jpg" alt="牧之原市 担当者 氏" class="w-full h-full object-cover">
+                                    </div>
+                                    <h3 class="font-bold text-gray-900 text-base">田形 正典 氏</h3>
+                                    <p class="text-xs text-blue-600 font-bold mt-1">牧之原市 産業経済部 農林水産課 主幹</p>
+                                    <p class="text-xs text-gray-600 mt-3 leading-relaxed text-left">
+                                        牧之原市にて長年にわたり行政・地域振興業務に携わる。産業経済部お茶振興課時代には、農業集落排水（農集排）施設の機能見直しや廃止に向けた現場の利害調整・実務を担当。その後、令和2年度から令和4年度まで産業経済部長として部全体の施策を統括し、令和5年度には議会事務局長を歴任。現在は農林水産課主幹として、農村地域のインフラ整備や基盤整備業務に従事する。
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Form Link Section -->
+                    <section id="apply" class="py-16 px-6 bg-gray-50 border-t border-gray-200">
+                        <div class="max-w-2xl mx-auto text-center gsap-fade-up">
+                            <span class="text-blue-600 text-xs font-black tracking-widest uppercase en-font">Registration</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mt-2">お申し込み</h2>
+                            
+                            <!-- 修正後の締め切り日時バッジ -->
+                            <div class="inline-block bg-red-50 border border-red-200 rounded-lg px-4 py-2 mt-4 mb-3">
+                                <p class="text-xs sm:text-sm font-bold text-red-600">
+                                    【お申し込み締め切り：2026年10月2日(金) 23:59まで】
+                                </p>
+                            </div>
+
+                            <p class="text-gray-600 text-xs sm:text-sm mb-8">以下のボタンよりお申し込みフォーム（外部サイト）へ移動し、必要事項をご記入の上ご登録ください。</p>
+                            
+                            <a href="https://seminar-app.com/cer-0000000223" target="_blank" rel="noopener noreferrer" class="btn-motion inline-block bg-blue-600 hover:bg-blue-700 text-white font-extrabold text-lg px-12 py-5 rounded-xl shadow-xl">
+                                お申し込みフォームを開く
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- フッターブリッジ（注意事項・お問い合わせ） -->
+                    <section class="py-10 px-6 bg-slate-900 border-t border-slate-800 text-slate-200 text-sm">
+                        <div class="max-w-3xl mx-auto text-left space-y-4">
+                            <div class="p-5 bg-slate-950 border border-slate-700 rounded-sm">
+                                <p class="font-extrabold text-blue-600 mb-1.5 text-xs sm:text-sm">【本セミナーに関する注意事項・お問い合わせ】</p>
+                                <p class="mb-1 text-slate-200">・オンラインご参加の方には、開催前日までに視聴用URLをお送りいたします。</p>
+                                <p class="mb-2 text-slate-200">・会場参加が定員を超えた場合は抽選となり、オンライン参加へのご変更をお願いする場合がございます。</p>
+                                <p class="font-bold">お問い合わせ事務局：フジクリーン株式会社（運営協力：株式会社船井総合研究所）</p>
+                                <p class="font-bold">お問い合わせメールアドレス：eigyo_kikaku@fujiclean.co.jp</p>
+                            </div>
+
+                            <!-- 案内終了の仕切り -->
+                            <div class="pt-8 text-center">
+                                <div class="relative flex py-2 items-center">
+                                    <div class="flex-grow border-t border-slate-700"></div>
+                                    <span class="flex-shrink mx-4 text-xs text-slate-300 font-extrabold uppercase tracking-wider">
+                                        ▲ 特別セミナー「下水道は維持できるのか？」ご案内エリア終了 ▲
+                                    </span>
+                                    <div class="flex-grow border-t border-slate-700"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            `;
+
+            // Smooth Scroll
+            shadow.querySelectorAll('a[href^="#"]').forEach(a => a.onclick = e => {
+                e.preventDefault();
+                const target = shadow.getElementById(a.hash.slice(1)) || document.querySelector(a.hash);
+                if (!target) return;
+
+                const start = window.scrollY;
+                const distance = target.getBoundingClientRect().top;
+                const duration = 1200;
+                let startTime = null;
+
+                const ease = (t, b, c, d) => -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+
+                function loop(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const timeElapsed = currentTime - startTime;
+                    window.scrollTo(0, ease(timeElapsed, start, distance, duration));
+                    if (timeElapsed < duration) requestAnimationFrame(loop);
+                }
+                requestAnimationFrame(loop);
+            });
+
+            // GSAP Animations Initialization
+            this.initGSAP(shadow);
+        }
+
+        initGSAP(shadow) {
+            // GSAP & ScrollTrigger プラグイン登録
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Hero Section の順次出現アニメーション
+            const heroElements = shadow.querySelectorAll('.gsap-hero');
+            gsap.fromTo(heroElements, 
+                { opacity: 0, y: 30 },
+                { 
+                    opacity: 1, 
+                    y: 0, 
+                    duration: 1, 
+                    stagger: 0.15, 
+                    ease: "power3.out",
+                    delay: 0.2
+                }
+            );
+
+            // 2. スクロール連動アニメーション (ScrollTrigger)
+            const fadeUpElements = shadow.querySelectorAll('.gsap-fade-up');
+            fadeUpElements.forEach(el => {
+                gsap.fromTo(el, 
+                    { opacity: 0, y: 40 },
+                    { 
+                        opacity: 1, 
+                        y: 0, 
+                        duration: 0.9, 
+                        ease: "power3.out",
+                        scrollTrigger: {
+                            trigger: el,
+                            start: "top 85%", // 画面の85%の位置にきたら発火
+                            toggleActions: "play none none none"
+                        }
+                    }
+                );
+            });
+        }
+    }
+
+    customElements.define('lp-content', LpContent);
+</script>
+</body>
+</html>
